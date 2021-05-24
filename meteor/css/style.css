@@ -1,0 +1,408 @@
+body {
+    background: white;
+    font-family: 'PT Sans', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+/* start: contentOfBox */
+.contentOfBox {
+    width: 80%;
+    margin: 2% 10%;
+}
+/* end:contentOfBox */
+
+h2 {
+    margin: 1% 0%;
+}
+.mybtn {
+    outline: none;
+    color: white;
+    padding: 1.5%;
+    background: linear-gradient(
+            179deg
+            , #8bc34a, #c8e0ac);
+    border-radius: 50px;
+    cursor: pointer;
+    width: 12%;
+    box-shadow: 0px 0px 15px 3px #4c4c4c;
+    border: 1px solid #909090;
+}
+#headerBox4, #headerBox2, #headerBox5 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+#headerBox4 h4 , #headerBox2 h4, #headerBox5 h4 {
+    margin-bottom: 0.5%;
+}
+#headerBox4::after, #headerBox2::after, #headerBox5::after {
+    width: 45px;
+    height: 2px;
+    text-align: center;
+    background: black;
+    content: ' ';
+    margin: 0 auto;
+    /* use display block for align center ! */
+    display: block;
+}
+/* start: box 1 */
+
+#box1 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/canva-photo-editor.png);
+    background-position: 0% 0%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+    color: white;
+}
+#box1  table {
+    width: 35%;
+    font-weight: bold;
+    font-size: large;
+}
+#box1  table a {
+    color: white;
+    text-decoration: none;
+}
+#box1 .row2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* display flex and centred */
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: center;
+}
+#box1 .row2 > table {
+    width: 100% !important;
+    height: auto;
+}
+#box1 .row2  td {
+    text-align: center;
+}
+#row3Body {
+    font-size: small;
+}
+.buttonColumn {
+    padding-top: 2.5%;
+}
+/* end: box 1 */
+
+/* start: box 2 */
+#box2 {
+    width: 100%;
+    height: 500px;
+    background-color: #F4F4F4;
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: black;
+    padding: 2% 0%;
+}
+#headerBox2 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+#headerBox2 h4 {
+    margin-bottom: 0.5%;
+}
+#headerBox2::after {
+    width: 45px;
+    height: 2px;
+    text-align: center;
+    background: black;
+    content: ' ';
+    margin: 0 auto;
+    /* use display block for align center ! */
+    display: block;
+}
+#contentBox2 {
+    width: 100%;
+    height: 80%;
+    margin: 2% 0%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#contentBox2 > table {
+    width: 100%;
+    text-align: center;
+}
+.cardOfBox2 {
+    width: 80%;
+    /* border: 1px solid #6e6e6e91; */
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px #0000002e;
+    padding: 5% 5%;
+    background: white;
+}
+.cardOfBox2 table {
+    width: 100%;
+    height: 90%;
+}
+.cardOfBox2 table td {
+    padding: 0;
+}
+.table2ofBox2 i {
+    font-size:40pt;
+    color: #4a6e4e;
+}
+.table2ofBox2 h3 {
+    font-size: medium;
+}
+.table2ofBox2 tr:nth-child(3) {
+    font-size: small;
+    text-align: justify;
+}
+/* end : box 2 */
+
+/* start: box 3 */
+#box3 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/minion_2-wallpaper-1024x576.jpg");
+    background-color: floralwhite;
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: black;
+}
+#contentOfBox3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#contentOfBox3 > table {
+    width: 100%;
+    height:70%;
+}
+#contentOfBox3 > table td {
+    padding: 0;
+    text-align: justify;
+}
+#table2OfBox3 {
+    width: 100%;
+    height: 100%;
+}
+.tdOfBox3 {
+    width: 50%;
+}
+.tdOfBox3:nth-child(2) {
+    text-align: center !important;
+}
+.tdOfBox3 > img {
+    width: 80%;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+.tdOfBox3 > img:hover {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+/* end: box 3 */
+
+
+/* start: box 4 */
+#box4 {
+    width: 100%;
+    height: 500px;
+    background-color: #F4F4F4;
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: black;
+    padding: 2% 0%;
+}
+
+
+
+#contentBox4 {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+#contentBox4 > table {
+    width: 100%;
+    text-align: center;
+}
+.itemsOfBox4 > td {
+    padding: 5% 0% 3% 0%;
+}
+.itemsOfBox4 ul {
+    list-style: none;
+    list-style-image: none;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    text-indent: 0;
+    padding: 0;
+}
+.itemsOfBox4 ul > li {
+    display: inline-block;
+    margin-left: 8%;
+}
+.itemsOfBox4 ul > li:nth-child(1) {
+    margin: 0 !important;
+}
+.itemsOfBox4 ul > li a {
+    text-decoration: none;
+    color: black;
+}
+.itemsOfBox4 ul > li a.active {
+    color: #A2CF8E;
+}
+.cardOfBox4 {
+    width: 80%;
+    border: 1px solid #6e6e6e91;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px #0000006b;
+    padding: 5% 5%;
+    background: white;
+}
+.cardOfBox4 table {
+    width: 100%;
+    height: 90%;
+}
+.cardOfBox4 table td {
+    padding: 0;
+}
+.table2ofBox4 i {
+    font-size:40pt;
+    color: #4a6e4e;
+}
+.table2ofBox4 h3 {
+    font-size: medium;
+}
+.table2ofBox4 tr:nth-child(3) {
+    font-size: small;
+    text-align: justify;
+}
+
+
+.galleryOfBox4 > td > img {
+    width: 95%;
+}
+/* end : box 4 */
+
+
+/* start: box 5 */
+#box5 {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/vivid_green_geometric_triangles_pattern_background-wallpaper-1024x576.jpg");
+    background-color: floralwhite;
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    color: black;
+}
+
+#headerBox5 {
+    color: white;
+}
+#headerBox5::after {
+    text-align: center;
+    background: white;
+}
+#contentOfBox5 {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#contentOfBox5 > table {
+    width: 50%;
+    height: 77%;
+}
+.tdOfBox5 div {
+    background-image: url("../images/beautiful_moraine_lake_sunrise-wallpaper-1024x576.jpg");
+    width: 90%;
+    height: 100%;
+}
+#table1Box5 div {
+    text-align: center;
+}
+#table2Box5 {
+    height: 77%;
+}
+#table2Box5 div {
+    background-image: url('../images/bg.jpg');
+    width: 100%;
+    height: 100%;
+}
+/*#contentOfBox5 > table td {*/
+/*padding: 0;*/
+/*text-align: justify;*/
+/*}*/
+/*#table2OfBox5 {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*}*/
+/*.tdOfBox5 {*/
+/*width: 50%;*/
+/*}*/
+/*.tdOfBox5:nth-child(2) {*/
+/*text-align: center !important;*/
+/*}*/
+/*.tdOfBox5 > img {*/
+/*width: 100%;*/
+/*height: 400px;*/
+/*text-align: center;*/
+/*opacity: 0.5;*/
+/*transition: opacity 0.5s ease-in-out;*/
+/*cursor: pointer;*/
+/*}*/
+/*.tdOfBox5 > img:hover {*/
+/*transition: opacity 0.5s ease-in-out;*/
+/*opacity: 1;*/
+/*}*/
+
+/*.tdOfBox5:nth-child(2) > table {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*}*/
+/*.tdOfBox5:nth-child(2) > table td img {*/
+/*width: 100%;*/
+/*}*/
+/* end: box 5 */
+
+
+table, tbody {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    text-indent: 0;
+    border-collapse: unset;
+}
+th, td, tbody, table {
+    padding: 0;
+    border-spacing: 0px;
+    text-indent: 0;
+    border-collapse: unset;
+}
