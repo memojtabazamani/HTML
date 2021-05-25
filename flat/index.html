@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,68 +12,70 @@
 
     <!-- css link -->
     <link rel="stylesheet" href="css/me.css">
+
+
 </head>
 <body>
-    <div id="wrapper">
-        <!-- start: content -->
-        <div id="content">
-            <!-- start: topheader -->
-            <div id="topheader">
-                <ul class="list">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Cost</a></li>
-                </ul>
-            </div>
-            <!-- end: topheader -->
+<div id="wrapper">
+    <!-- start: content -->
+    <div id="content">
+        <!-- start: topheader -->
+        <div id="topheader" class="row">
+            <ul class="list col-12 col-sm-12 col-md-12">
+                <li class="col-12" id="buttonMenu" data-toglle="collapse"><a href="#">
 
-            <!-- start: innercontent -->
-            <div id="innerContent">
-                <table id="gallery">
-                    <tbody>
-                    <tr>
-                        <td><img src="images/bg1.jpg" alt=""></td>
-                        <td><img src="images/bg2.jpg" alt=""></td>
-                        <td><img src="images/bg3.jpg" alt=""></td>
-                        <td><img src="images/bg4.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/bg5.jpg" alt=""></td>
-                        <td><img src="images/bg6.jpg" alt=""></td>
-                        <td><img src="images/bg7.jpg" alt=""></td>
-                        <td><img src="images/bg8.jpg" alt=""></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- end: innercontent -->
+                    <i class="fa fa-bars " style="text-align: center"></i>
+                </a></li>
+                <li class="collapse active  col-12 col-sm-12 col-md-2"><a href="#">Home</a></li>
+                <li class="collapse col-12 col-sm-12 col-md-2"><a href="#">About</a></li>
+                <li class="collapse col-12 col-sm-12 col-md-2"><a href="#">Gallery</a></li>
+                <li class="collapse col-12 col-sm-12 col-md-2"><a href="#">Services</a></li>
+                <li class="collapse col-12 col-sm-12 col-md-2"><a href="#">Cost</a></li>
+            </ul>
         </div>
-        <!-- end: content -->
+        <!-- end: topheader -->
 
-        <!-- start: footer -->
-        <div id="footer">
-            <table id="footerTable">
-                <tbody>
-                    <tr>
-                        <td class="left">
-                            <ul class="listFooter">
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            </ul>
-                        </td>
-                        <td class="right">
-                            Copyright © 2016 Your Company - Design: Templatemo
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- start: innercontent -->
+        <div id="innerContent" class="row">
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-center">
+                <img src="images/bg1.jpg" alt="">
+            </div>
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-center">
+                <img src="images/bg2.jpg" alt="">
+            </div>
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-center">
+                <img src="images/bg3.jpg" alt="">
+            </div>
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-center">
+                <img src="images/bg3.jpg" alt="">
+            </div>
+
+            <div class="col-10 col-sm-6 col-md-4 col-lg-3 m-center">
+                <img src="images/bg4.jpg" alt="">
+            </div>
         </div>
-        <!-- end: footer -->
+        <!-- end: innercontent -->
     </div>
+    <!-- end: content -->
+
+    <!-- start: footer -->
+    <div id="footer" class="row">
+        <div class="col-6">
+            <ul class="listFooter">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="col-6 right">
+            Copyright © 2016 Your Company - Design: Templatemo
+        </div>
+    </div>
+    <!-- end: footer -->
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/me.js" type="text/javascript"></script>
 </body>
 </html>
 
