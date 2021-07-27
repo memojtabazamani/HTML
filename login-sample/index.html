@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Form With modal</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>		
+<body>
+	<div id="wrap">
+		<span onclick="document.getElementById('wrap').className=''">x</span>
+		<form>
+			<h2>Welcome</h2>
+			<label>
+				<input type="text" placeholder="username">
+			</label>
+			<label>
+				<input type="text" placeholder="password">
+			</label>
+			<label>
+				<button>Log In</button>
+			</label>
+		</form>
+		<button id="open" onclick="document.getElementById('wrap').className='open'">Log In</button>
+	</div>
+</body>
+</html>
