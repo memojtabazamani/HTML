@@ -1,0 +1,101 @@
+body {
+	margin: 0;
+	text-indent: 0;
+	animation-name: bodyDisco;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+	animation-duration: 0.5s;
+    height: 100vh;
+}
+#wrap {
+	display: grid;
+}
+ul {
+	display: inline-block;
+}
+ul > li {
+	display: inline-block;
+	list-style: none;
+	list-style-type: none;
+	background: black;
+	padding: 3%;
+	border-radius: 50%;
+}
+li:nth-child(1) {
+	animation-name: c1;
+	animation-delay: 0.5s;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+li:nth-child(2) {
+	animation-name: c2;
+	animation-delay: 1s;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+li:nth-child(3) {
+	animation-name: c3;
+	animation-delay: 1.5s;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+li:nth-child(4) {
+	animation-name: c4;
+	animation-delay: 2s;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+
+
+
+@keyframes c1 {
+	from {
+		background: black;
+	}
+	to {
+		background: red;
+	}
+}
+@keyframes c2 {
+	from {
+		background: red;
+	}
+	to {
+		background: orange;
+	}
+}
+@keyframes c3 {
+	from {
+		background: orange;
+	}
+	to {
+		background: blue;
+	}
+}
+@keyframes c4 {
+	from {
+		background: blue;
+	}
+	to {
+		background: lime;
+	}
+}
+
+@keyframes bodyDisco {
+	0% {
+		background: #172FE0;
+	}
+	50% {
+		background: #C111C7;
+	    box-shadow: inset 0px 0px 60px 50px #0000007d;
+	}
+	75% {
+		background: #C111C7;
+	    box-shadow: inset 0px 0px 60px 60px #0000007d;
+	}
+	100% {
+		background: #C111C7;
+	    box-shadow: inset 0px 0px 60px 70px #0000007d;
+	}
+}
