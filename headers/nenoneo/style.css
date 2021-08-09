@@ -99,18 +99,49 @@
    button {
    	border: none;
    	outline: none;
-   	box-shadow: 0px 0px 15px 5px rgb(0 173 212 / 40%);
    	border-radius: 4px;
-   	background: aquamarine;
    	cursor: pointer;
    	color: #ff5e00;
    	font-family: cursive;
-   	height: 40px;
-   	width: 90px;
+
+   	background-color: #2ecc71;
+   	border-bottom: 5px solid #27ae60;
+   	text-shadow: 0px -2px #27ae60;
+
    }
    .buttonGroup {
    	margin-left: auto;
-	   width: 25% !important;
+   	width: 25% !important;
+   }
+   
+   .animate
+   {
+   	transition: all 0.1s;
+   	-webkit-transition: all 0.1s;
+   }
+
+   .action-button {
+   	border-radius: 3px;
+   	font-family: 'Lato', sans-serif;
+   	font-size: 18px;
+   	color: #FFF;
+   	text-decoration: none;	
+   	height: 40px;
+   	width: 90px;
+   }
+
+   
+   .green
+   {
+   	background-color: #2ecc71;
+   	border-bottom: 5px solid #27ae60;
+   	text-shadow: 0px -2px #27ae60;
+   }
+   .action-button:active
+   {
+   	transform: translate(0px,5px);
+   	-webkit-transform: translate(0px,5px);
+   	border-bottom: 1px solid;
    }
 
 
