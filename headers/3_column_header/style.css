@@ -97,6 +97,10 @@ table {
     font-weight: bolder;
     border-bottom: 0px solid green;
     background: #66ff66;
+    width: 80%;
+    height: 30px;
+    font-size: medium;
+    cursor: pointer;
 }
 
 @media (max-width: 320px) {
@@ -108,5 +112,10 @@ table {
     }
     .items > a {
         margin: 15% 0%
+    }
+    .btn {
+        width: auto;
+        height: 30px;
+        font-size: medium;
     }
 }
