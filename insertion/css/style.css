@@ -154,6 +154,7 @@ table {
 .item {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 img.itemImage {
@@ -179,19 +180,21 @@ img.itemImage {
     /* flex-wrap: wrap; */
     padding: 7% 5%;
 }
-.btn {
-    flex-basis: 50%;
+button {
     border: none;
     outline: none;
 }
 
+.btn {
+    flex-basis: 50%;
+}
 .extraContent {
     display: flex;
     flex-direction: column;
     flex-basis: 30%;
 }
 .item {
-    margin: 8% 0%;
+    margin: 3% 0%;
 }
 /*// FF80B0*/
 .item:nth-child(odd) .contentItem {
@@ -226,3 +229,72 @@ img.itemImage {
 .item:nth-child(even) .btn:not(.active) {
     color: #669ACC;
 }
+
+
+.box3 {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0%;
+}
+.ls {
+    flex-basis: 50%;
+    padding: 5% 0%;
+    text-align: center;
+    background: #F2F2F2;
+}
+.rs {
+    flex-basis: 50%;
+    text-align: center;
+}
+.rs img {
+    /* width: 100%; */
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.ls h2 {
+    color: #DF709A;
+}
+
+.ls p {
+    margin: 5% 5%;
+    line-height: 1.3;
+}
+
+input[type="text"] {
+    width: 70%;
+    border: none;
+    outline: none;
+    padding: 2% 2%;
+}
+
+.btnSubmit {
+    background: #DF709A;
+    padding: 1.5% 5%;
+    color: white;
+}
+
+.box4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 33.3%;
+}
+.headerList {
+    font-weight: bolder;
+    font-size: x-large;
+    margin-bottom: 5%;
+    color: darkgray;
+}
+.list > li {
+    font-size: medium;
+    color: deepskyblue;
+    text-align: left;
+    margin: 4% 0%;
+}
+/*.list > li:nth-child(1) {*/
+    /*margin: 0% !important;*/
+/*}*/
