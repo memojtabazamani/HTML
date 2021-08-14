@@ -179,21 +179,23 @@ table {
     -o-transition: color 1s linear;
     transition: color 1s linear;
     cursor: pointer;
-}
-.middleBox h2:hover {
     color: black;
 }
 
-/*.middleBox h2:hover::after {*/
-    /*content: ' ';*/
-    /*position: relative;*/
-    /*background: red;*/
-    /*height: 3px;*/
-    /*display: block;*/
-    /*width: 40%;*/
-    /*left: 30%;*/
-    /*margin-top: 0.5%;*/
-/*}*/
+.middleBox h2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    margin: 0 auto;
+    margin-top: 0.5%;
+}
+
+.middleBox h2:hover::after {
+    width: 50%;
+}
 
 .item {
     display: flex;
@@ -231,6 +233,7 @@ button {
 
 .btn {
     flex-basis: 50%;
+    cursor: pointer;
 }
 .extraContent {
     display: flex;
@@ -240,6 +243,16 @@ button {
 .item {
     margin: 3% 0%;
 }
+
+.item:nth-child(even) .btn,
+.item:nth-child(odd) .btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
 /*// FF80B0*/
 .item:nth-child(odd) .contentItem {
     background: #ffb8d3;
@@ -255,6 +268,18 @@ button {
 
 .item:nth-child(odd) .btn:not(.active) {
     color: #FF80B0;
+}
+
+.item:nth-child(odd) .btn {
+    border: 0px solid #ff0060;
+    color: black;
+}
+
+.item:nth-child(odd) .btn:hover {
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    background: #ff0060;
 }
 
 
@@ -274,6 +299,18 @@ button {
     color: #669ACC;
 }
 
+.item:nth-child(even) .btn {
+    border: 0px solid #669ACC;
+    color: black;
+
+}
+
+.item:nth-child(even) .btn:hover {
+    color: black;
+    font-weight: bolder;
+    font-size: large;
+    background: #0082ff;
+}
 
 .box3 {
     display: flex;
@@ -307,15 +344,25 @@ button {
 
 input[type="text"] {
     width: 70%;
-    border: none;
+    border : 0px solid white;
     outline: none;
     padding: 2% 2%;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type='text']:focus {
+    border : 1px solid #DF709A;
 }
 
 .btnSubmit {
     background: #DF709A;
     padding: 1.5% 5%;
     color: white;
+    cursor: pointer;
 }
 
 .box4 {
@@ -334,10 +381,29 @@ input[type="text"] {
     color: darkgray;
 }
 .list > li {
-    font-size: medium;
-    color: deepskyblue;
     text-align: left;
     margin: 4% 0%;
+}
+.list > li a {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: medium;
+    color: deepskyblue;
+}
+.list > li a:hover {
+    margin-left: 1px;
+}
+
+.list a,
+.list a:active,
+.list a:focus,
+.list a:visited,
+.list a:link{
+    text-decoration: none;
 }
 /*.list > li:nth-child(1) {*/
     /*margin: 0% !important;*/
