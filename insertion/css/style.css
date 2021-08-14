@@ -104,8 +104,21 @@ h1, h2, h3, h4, h5, h6 {
 .navigation a {
     text-decoration: none;
     color: black;
+    -webkit-transition: color 0.5s linear, text-shadow 0.5s linear, font-size 0.5s linear;
+    -moz-transition: color 0.5s linear, text-shadow 0.5s linear, font-size 0.5s linear;
+    -ms-transition: color 0.5s linear, text-shadow 0.5s linear, font-size 0.5s linear;
+    -o-transition: color 0.5s linear, text-shadow 0.5s linear, font-size 0.5s linear;
+    transition: color 0.5s linear, text-shadow 0.5s linear, font-size 0.5s linear;
 }
 
+.navigation a:not(.active):hover {
+    color: #e400ff;
+    font-size: large;
+}
+a.active {
+    color: #6eff00;
+    font-size: large;
+}
 /*.clearfix::after {*/
 /*content: "";*/
 /*clear: both;*/
@@ -133,8 +146,18 @@ table {
     width: 95%;
     max-width: 400px;
     max-height: 450px;
+    cursor: pointer;
+    filter: grayscale(1);
+    -webkit-transition: filter 0.8s linear;
+    -moz-transition: filter 0.8s linear;
+    -ms-transition: filter 0.8s linear;
+    -o-transition: filter 0.8s linear;
+    transition: filter 0.8s linear;
 }
 
+.gallery img:hover {
+    filter: grayscale(0);
+}
 .middleBox {
     width: 100%;
     height: 100%;
@@ -147,9 +170,30 @@ table {
     color: white;
     margin: 5% 0%;
     padding: 15% 0%;
+
+}
+.middleBox h2 {
+    -webkit-transition: color 1s linear;
+    -moz-transition: color 1s linear;
+    -ms-transition: color 1s linear;
+    -o-transition: color 1s linear;
+    transition: color 1s linear;
+    cursor: pointer;
+}
+.middleBox h2:hover {
+    color: black;
 }
 
-
+/*.middleBox h2:hover::after {*/
+    /*content: ' ';*/
+    /*position: relative;*/
+    /*background: red;*/
+    /*height: 3px;*/
+    /*display: block;*/
+    /*width: 40%;*/
+    /*left: 30%;*/
+    /*margin-top: 0.5%;*/
+/*}*/
 
 .item {
     display: flex;
