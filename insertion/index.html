@@ -3,155 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>-</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <script> </script>
+    <script>
+    function openNavigations() {
+        var x = document.getElementById("navigation");
+        if (x.classList.contains("close")) {
+            x.classList.add("open");
+            x.classList.remove("close");
+        } else {
+            x.classList.add("close");
+            x.classList.remove("open");
+        }
+    }
+    </script>
 
 </head>
 <body>
-<div class="container">
-    <div class="header clearfix">
-        <ul class="navigation">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Account</a></li>
-        </ul>
-        <div class="section">
-            <table>
-                <tr>
-                    <td>
-                        <h1 class="xxxlarge">
-                            <i class="fas fa-music"></i>
-                        </h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h1 class="large" style="    margin: 2% 0%;">
-                            INSERTION
-                        </h1>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Player of 2024</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div class="content">
-        <div class="gallery">
-            <div><img src="images/g1.jpg" alt=""></div>
-            <div><img src="images/g2.jpg" alt=""></div>
-            <div><img src="images/g3.jpg" alt=""></div>
-            <div><img src="images/g4.jpg" alt=""></div>
-        </div>
-        <div class="middleBox">
-            <h2>
-                MUSIC IS POWER OF LIFE!
-            </h2>
-        </div>
-        <div class="itemsBox">
-            <div class="item">
-                <div class="image">
-                    <img src="images/i1.jpg" alt="" class="itemImage">
-                </div>
-                <div class="contentItem">
-                    <div class="contentImage">
-                        <h3>
-                            Item 1
-                        </h3>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, officiis?
-                        </p>
-                    </div>
-                    <div class="extraContent">
-                        <button class="btn active">Buy</button>
-                        <button class="btn">2.74 $</button>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="images/i2.jpg" alt="" class="itemImage">
-                </div>
-                <div class="contentItem">
-                    <div class="contentImage">
-                        <h3>
-                            Item 1
-                        </h3>
-                        <br>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, officiis?
-                        </p>
-                    </div>
-                    <div class="extraContent">
-                        <button class="btn active">Buy</button>
-                        <button class="btn">2.74 $</button>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="header clearfix">
+            <ul class="navigation close" id="navigation">
+                <li class="responsiveLink" onclick="openNavigations()">
+                    <a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+            <div class="section">
+                <table>
+                    <tr>
+                        <td>
+                            <h1 class="xxxlarge">
+                                <i class="fas fa-music"></i>
+                            </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="large" style="    margin: 2% 0%;">
+                                INSERTION
+                            </h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Player of 2024</td>
+                    </tr>
+                </table>
             </div>
         </div>
-        <!-- start: box 3 -->
-        <div class="box3">
-            <div class="ls">
+        <div class="content">
+            <div class="gallery">
+                <div><img src="images/g1.jpg" alt=""></div>
+                <div><img src="images/g2.jpg" alt=""></div>
+                <div><img src="images/g3.jpg" alt=""></div>
+                <div><img src="images/g4.jpg" alt=""></div>
+            </div>
+            <div class="middleBox">
                 <h2>
-                    Subscribe
+                    MUSIC IS POWER OF LIFE!
                 </h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, assumenda autem dignissimos dolor dolore doloribus earum itaque non, obcaecati, odit optio quam sint temporibus voluptate!
-                </p>
-                <input type="text">
-                <button class="btnSubmit">Submit</button>
             </div>
-            <div class="rs">
-                <img src="images/bottom_box.jpg" alt="">
+            <div class="itemsBox">
+                <div class="item">
+                    <div class="image">
+                        <img src="images/i1.jpg" alt="" class="itemImage">
+                    </div>
+                    <div class="contentItem">
+                        <div class="contentImage">
+                            <h3>
+                                Item 1
+                            </h3>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, officiis?
+                            </p>
+                        </div>
+                        <div class="extraContent">
+                            <button class="btn active">Buy</button>
+                            <button class="btn">2.74 $</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="images/i2.jpg" alt="" class="itemImage">
+                    </div>
+                    <div class="contentItem">
+                        <div class="contentImage">
+                            <h3>
+                                Item 1
+                            </h3>
+                            <br>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, officiis?
+                            </p>
+                        </div>
+                        <div class="extraContent">
+                            <button class="btn active">Buy</button>
+                            <button class="btn">2.74 $</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- end: box 3 -->
+            <!-- start: box 3 -->
+            <div class="box3">
+                <div class="ls">
+                    <h2>
+                        Subscribe
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, assumenda autem dignissimos dolor dolore doloribus earum itaque non, obcaecati, odit optio quam sint temporibus voluptate!
+                    </p>
+                    <input type="text">
+                    <button class="btnSubmit">Submit</button>
+                </div>
+                <div class="rs">
+                    <img src="images/bottom_box.jpg" alt="">
+                </div>
+            </div>
+            <!-- end: box 3 -->
 
-        <!-- start: box 4 -->
-        <div class="box4">
-            <div class="column">
-                <h4 class="headerList">
-                    LISTS
-                </h4>
-                <ul class="list">
-                    <li><a href="#"> LIST 1</a></li>
-                    <li><a href="#"> LIST 2</a></li>
-                    <li><a href="#"> LIST 3</a></li>
-                    <li><a href="#"> LIST 4</a></li>
-                </ul>
+            <!-- start: box 4 -->
+            <div class="box4">
+                <div class="column">
+                    <h4 class="headerList">
+                        LISTS
+                    </h4>
+                    <ul class="list">
+                        <li><a href="#"> LIST 1</a></li>
+                        <li><a href="#"> LIST 2</a></li>
+                        <li><a href="#"> LIST 3</a></li>
+                        <li><a href="#"> LIST 4</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="headerList">
+                        LISTS
+                    </h4>
+                    <ul class="list">
+                        <li><a href="#"> LIST 1</a></li>
+                        <li><a href="#"> LIST 2</a></li>
+                        <li><a href="#"> LIST 3</a></li>
+                        <li><a href="#"> LIST 4</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h4 class="headerList">
+                        LISTS
+                    </h4>
+                    <ul class="list">
+                        <li><a href="#"> LIST 1</a></li>
+                        <li><a href="#"> LIST 2</a></li>
+                        <li><a href="#"> LIST 3</a></li>
+                        <li><a href="#"> LIST 4</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="column">
-                <h4 class="headerList">
-                    LISTS
-                </h4>
-                <ul class="list">
-                    <li><a href="#"> LIST 1</a></li>
-                    <li><a href="#"> LIST 2</a></li>
-                    <li><a href="#"> LIST 3</a></li>
-                    <li><a href="#"> LIST 4</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h4 class="headerList">
-                    LISTS
-                </h4>
-                <ul class="list">
-                    <li><a href="#"> LIST 1</a></li>
-                    <li><a href="#"> LIST 2</a></li>
-                    <li><a href="#"> LIST 3</a></li>
-                    <li><a href="#"> LIST 4</a></li>
-                </ul>
-            </div>
+            <!-- end: box 4 -->
         </div>
-        <!-- end: box 4 -->
     </div>
-</div>
 </body>
 </html>
