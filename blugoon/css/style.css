@@ -224,17 +224,27 @@ button.btn {
 
 .items {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2% 0%;
 }
 
 .items .box {
-    flex-basis: 45%;
-    padding: 5%;
+    width: 49%;
     background: #5CA9DD;
-    margin: 2% 1% 2% 0%;
+    margin: 0% 1% 2% 0%;
 }
 
 .details li:nth-child(2) {
     margin: 5% 0%;
     font-weight: bold;
     font-size: 1.5rem;
+}
+
+.details li:nth-child(3) {
+    font-size: 8pt;
+}
+
+ul.details {
+    padding: 15% 10%;
 }
