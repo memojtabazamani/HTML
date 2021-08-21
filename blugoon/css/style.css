@@ -227,6 +227,8 @@ button.btn {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 2% 0%;
+    margin: 5% 0%;
+    border-bottom: 1px solid #ffffffc7;
 }
 
 .items .box {
@@ -248,3 +250,21 @@ button.btn {
 ul.details {
     padding: 15% 10%;
 }
+
+/*start:gallery*/
+.gallery {
+    margin: 5% 0%;
+    border-bottom: 1px solid #ffffffc7;
+}
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.options  a.active {
+    color: #0064e0;
+    font-weight: bold;
+    border-bottom: 1px solid blue;
+}
+/*end:galley*/
